@@ -81,10 +81,13 @@ $(document).ready(function(){
   $("section h2").each(function(){
     var idsection = SupprAcc($(this).text()).toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'');
     
-    $("div.div_home ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + idsection + "' class='button'>" + $(this).text() + "</a></li>");
-    $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + idsection + "' class='button'>" + $(this).text() + "</a></li>");
+    var tit = ($(this).data('text')) ? $(this).data('text') : $(this).text();
+    $("div.div_home ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + idsection + "' class='button'>" + tit + "</a></li>");
+    if(!$(this).hasClass("presentation")){
+        $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + idsection + "' class='button'>" + $(this).text() + "</a></li>");
+        $("nav ul li:first-child a").parent().addClass("active");
+    } 
     $(this).attr("id",idsection);
-    $("nav ul li:first-child a").parent().addClass("active");
   });
   
   $("nav ul li, div.div_home ul li").on("click", "a", function(event) {  

@@ -9,14 +9,10 @@
     <link rel="stylesheet" href="stylesheets/mes_styles.css">
     <script src="javascripts/jquery.min.js"></script>
     <script type="text/javascript" src="ma_config.ini"></script>
+    <script src="javascripts/sketchs_defi_des_drapeaux.js"></script>
     <script src="javascripts/main.js"></script>
-    <script src="javascripts/mes_scripts.js"></script>
     <script src="javascripts/p5.min.js"></script>
-    <script src="javascripts/sketch_defis1_drap01.js"></script>
-    <script src="javascripts/sketch_defis1_drap02.js"></script>
-    <script src="javascripts/sketch_defis1_drap03.js"></script>
-    <script src="javascripts/sketch_defis1_drap04.js"></script>
-    <script src="javascripts/sketch_defis1_drap05.js"></script>
+    <script src="javascripts/p5.dom.min.js"></script>    
     <script src="javascripts/mes_scripts.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -34,7 +30,6 @@
           <div class="div_home">
             <ul>
               <li><a id="a_home" class="button"><img src='images/home.png' alt='home' /></a></li>
-              <li class="button">DEFIS 1</li>
             </ul>
           </div>
           <div class="div_github">
@@ -44,45 +39,20 @@
           </div>
     </div><!-- end banner -->
 
-    <div class="wrapper">
+    <div id="wrapper">
         <nav>
           <ul></ul>
         </nav>
-
-      
         <section>
-          <h2>Drapeau 1</h2>
-          <p>L'objet de ce défi est de ...</p>
-          <div id='div_drap1'></div>
+           <h2 class="presentation" data-text="DEFI 1">DEFI DES DRAPEAUX</h2>
+           <p>
+           
+           </p>
         </section>
-      
-        <section>
-          <h2>Drapeau 2</h2>
-          <p>L'objet de ce défi est de ...</p>
-          <div id='div_drap2'></div>
-        </section>
-
-        <section>
-          <h2>Drapeau 3</h2>
-          <p>L'objet de ce défi est de ...</p>
-          <div id='div_drap3'></div>
-        </section>
-
-        <section>
-          <h2>Drapeau 4</h2>
-          <p>L'objet de ce défi est de ...</p>
-          <div id='div_drap4'></div>
-        </section>
-        
-        <section>
-          <h2>Drapeau 5</h2>
-          <p>L'objet de ce défi est de ...</p>
-          <div id='div_drap5'></div>
-          
-        </section>
-        
-        <footer></footer>
     </div>
+    
+    <footer></footer>
+    
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>

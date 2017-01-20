@@ -1,0 +1,5 @@
+canvas { border: 1px solid blue; }
+
+div.div_drapeau button{ vertical-align:top; }
+div.div_drapeau div{ display:block; }
+div.div_drapeau textarea{ display:none; vertical-align:top; }
